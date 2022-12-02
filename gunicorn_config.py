@@ -1,2 +1,2 @@
-bind = "0.0.0.0:8080"
-workers = 1000
+gunicorn -b 0.0.0.0:0 seashell-app.wsgi:application
+
